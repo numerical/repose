@@ -34,21 +34,6 @@
 #define BOLDMAGENTA "\033[1;35m"
 #define BOLDCYAN    "\033[1;36m"
 
-enum action {
-    ACTION_VERIFY,
-    ACTION_UPDATE,
-    ACTION_REMOVE,
-    ACTION_QUERY,
-    INVALID_ACTION
-};
-
-typedef struct colstr {
-    const char *colon;
-    const char *warn;
-    const char *error;
-    const char *nocolor;
-} colstr_t;
-
 static struct {
     const char *key;
     enum action action;
