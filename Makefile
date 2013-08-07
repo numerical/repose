@@ -17,6 +17,8 @@ install: repose
 	install -Dm755 repose ${DESTDIR}/usr/bin/repose
 	# install -Dm644 repose.1 $(DESTDIR)/usr/share/man/man1/repose.1
 
+userinstall: repose
+	install -Dm755 repose ${HOME}/bin/
 clean:
 	${RM} repose *.o alpm/*.o
 
